@@ -7,3 +7,4 @@ from .indirect_jumps import IndirectJumps
 from .labels import Labels
 from .cfg import CFGManager
 from .plugin import KnowledgeBasePlugin
+from .clinic import Clinic
