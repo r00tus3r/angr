@@ -1,5 +1,9 @@
 container: 'angr/ci:latest'
 
+variables:
+  num_workers: 1
+  worker: 0
+
 steps:
   - script: /root/scripts/azure-build.sh
   - script: /root/scripts/azure-test.sh
