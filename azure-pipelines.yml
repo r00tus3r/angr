@@ -3,7 +3,7 @@ jobs:
   pool:
     vmImage: ubuntu-16.04
   container:
-    image: angr/ci:latest
+    image: kphoenix/ci:1
     options: --cap-add=SYS_PTRACE
   steps:
   - script: /root/scripts/azure-build.sh
@@ -17,7 +17,7 @@ jobs:
   pool:
     vmImage: ubuntu-16.04
   container:
-    image: angr/ci:latest
+    image: kphoenix/ci:1
     options: --cap-add=SYS_PTRACE
   dependsOn: Build
   condition: succeeded()
