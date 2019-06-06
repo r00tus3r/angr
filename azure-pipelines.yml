@@ -17,7 +17,7 @@ jobs:
   pool:
     vmImage: ubuntu-16.04
   container:
-    image: kphoenix/ci:1
+    image: angr/ci:1
     options: --cap-add=SYS_PTRACE
   dependsOn: Build
   condition: succeeded()
